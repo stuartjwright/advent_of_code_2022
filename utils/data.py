@@ -11,3 +11,8 @@ def get_filename(day: int) -> str:
 def read_data_as_list(day: int) -> list[str]:
     with open(get_filename(day), 'r') as f:
         return [line.strip() for line in f.readlines()]
+
+
+def read_data_as_string(day: int) -> str:
+    with open(get_filename(day), 'r') as f:
+        return f.read().strip()
