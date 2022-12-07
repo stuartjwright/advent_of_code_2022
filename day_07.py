@@ -3,12 +3,6 @@ from utils.data import read_data_as_list
 
 
 class Node:
-    parent = None
-    children = None
-    name = None
-    type = None
-    size = 0
-
     def __init__(self, parent, name, size, node_type):
         self.parent = parent
         self.name = name
